@@ -7,7 +7,7 @@ package Java001;
 /**
  * @author （moriya） <br />
  *         （Java001.Test05） <br />
- *         （【m2o】理解度確認_演習小問題(Java).Java001.Test04） <br />
+ *         （【m2o】理解度確認_演習小問題(Java).Java001.Test05） <br />
  *         更新履歴 2015/12/06 （moriya）：（新規作成） <br />
  */
 public class Test05 {
