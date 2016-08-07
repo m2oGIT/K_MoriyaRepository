@@ -1,0 +1,77 @@
+**–â‚P
+MariaDB [(none)]> insert into moeiwast_eiwatest_DB01.TEST01(INT_NUM,NAME_STR,DBL_NUM,CREATE_DATE)values(43001,'moriya-kouichi',174.7,'2017/01/01');
+Query OK, 1 row affected (0.02 sec)
+
+MariaDB [(none)]> 
+MariaDB [(none)]> select INT_NUM,NAME_STR,DBL_NUM,CREATE_DATE from moeiwast_eiwatest_DB01.TEST01;
++---------+----------------------+---------+-------------+
+| INT_NUM | NAME_STR             | DBL_NUM | CREATE_DATE |
++---------+----------------------+---------+-------------+
+|       1 | ?e?X?g???Y           | 123.456 | 2010-01-01  |
+|       2 | ?`?a?b?c?d?e?f       |   0.456 | 2013-02-02  |
+|       3 | ABCDEFG              | 999.999 | 2015-03-03  |
+|       4 | ?P?Q?R?S?T?U?V?W?X?O |    NULL | 2015-04-04  |
+|   43001 | moriya-kouichi       | 174.700 | 2017-01-01  |
+|   99999 | 1234567890           |   0.000 | 2016-05-05  |
++---------+----------------------+---------+-------------+
+6 rows in set (0.00 sec)
+
+MariaDB [(none)]> 
+
+
+**–â‚Q
+MariaDB [(none)]> update  moeiwast_eiwatest_DB01.TEST01 set CREATE_DATE = '2016/07/23' where INT_NUM = 43001;
+Query OK, 1 row affected (0.10 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+MariaDB [(none)]> 
+MariaDB [(none)]> select INT_NUM,NAME_STR,DBL_NUM,CREATE_DATE from moeiwast_eiwatest_DB01.TEST01;
++---------+----------------------+---------+-------------+
+| INT_NUM | NAME_STR             | DBL_NUM | CREATE_DATE |
++---------+----------------------+---------+-------------+
+|       1 | ?e?X?g???Y           | 123.456 | 2010-01-01  |
+|       2 | ?`?a?b?c?d?e?f       |   0.456 | 2013-02-02  |
+|       3 | ABCDEFG              | 999.999 | 2015-03-03  |
+|       4 | ?P?Q?R?S?T?U?V?W?X?O |    NULL | 2015-04-04  |
+|   43001 | moriya-kouichi       | 174.700 | 2016-07-23  |
+|   99999 | 1234567890           |   0.000 | 2016-05-05  |
++---------+----------------------+---------+-------------+
+6 rows in set (0.00 sec)
+
+MariaDB [(none)]> 
+
+
+**–â‚R
+MariaDB [(none)]> \. /Users/moriya/git/K_MoriyaRepository/Practice_moriya/src/MySQL002/Script_001.sql
+Query OK, 1 row affected (0.02 sec)
+
++---------+-----------------------+---------+-------------+
+| INT_NUM | NAME_STR              | DBL_NUM | CREATE_DATE |
++---------+-----------------------+---------+-------------+
+|       1 | ?e?X?g???Y            | 123.456 | 2010-01-01  |
+|       2 | ?`?a?b?c?d?e?f        |   0.456 | 2013-02-02  |
+|       3 | ABCDEFG               | 999.999 | 2015-03-03  |
+|       4 | ?P?Q?R?S?T?U?V?W?X?O  |    NULL | 2015-04-04  |
+|   99999 | 1234567890            |   0.000 | 2016-05-05  |
+|   43001 | moriya-kouichi        | 174.700 | 2016-07-23  |
+|   12345 | moriy@-morizo-kouichi | 174.700 | 2087-12-31  |
++---------+-----------------------+---------+-------------+
+7 rows in set (0.00 sec)
+
+Query OK, 1 row affected (0.02 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
++---------+----------------------+---------+-------------+
+| INT_NUM | NAME_STR             | DBL_NUM | CREATE_DATE |
++---------+----------------------+---------+-------------+
+|       1 | ?e?X?g???Y           | 123.456 | 2010-01-01  |
+|       2 | ?`?a?b?c?d?e?f       |   0.456 | 2013-02-02  |
+|       3 | ABCDEFG              | 999.999 | 2015-03-03  |
+|       4 | ?P?Q?R?S?T?U?V?W?X?O |    NULL | 2015-04-04  |
+|   99999 | 1234567890           |   0.000 | 2016-05-05  |
+|   43001 | moriya-kouichi       | 174.700 | 2016-07-23  |
+|   12345 | moriy@-morizo-kou_1  | 174.700 | 2087-12-31  |
++---------+----------------------+---------+-------------+
+7 rows in set (0.00 sec)
+
+MariaDB [(none)]> 
